@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="wifi_setting">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="wifi_setting"
+            android:title="@string/wifi_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="network_setting">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="network_setting"
+            android:title="@string/network_title" />
+    </PreferenceCategory>
+    <PreferenceScreen
+        android:key="other_setting"
+        android:summary="other setting"
+        android:title="other">
+        <EditTextPreference
+            android:defaultValue="false"
+            android:key="name_setting"
+            android:summary="@string/name_summary"
+            android:title="@string/name_title" />
+        <ListPreference
+            android:dialogTitle="@string/dialog_title_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entry_values_list_preference"
+            android:key="list_setting"
+            android:summary="@string/list_summary_preference"
+            android:title="@string/list_title_preference"
+            android:defaultValue="alpha" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Launches an Activity from an Intent"
+        android:title="Intent preference">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.baidu.com" />
+
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Back MainActivity">
+        <intent
+            android:targetClass="com.example.chenkun.preferencesactivitydemo.MainActivity"
+            android:targetPackage="com.example.chenkun.preferencesactivitydemo" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PreferencesActivityDemo</string>
+    <string name="toggle_on">you selected On</string>
+    <string name="toggle_off">you selected Off</string>
+
+    <!-- preferences -->
+    <string name="name_title">Name</string>
+    <string name="name_summary">sky</string>
+    <string name="network_title">Network</string>
+    <string name="network_summary_off">Net-Work unavailable</string>
+    <string name="network_summary_on">Net-Work available</string>
+    <string name="wifi_title">Wifi</string>
+    <string name="wifi_summary_off">WI-FI networks unavailable</string>
+    <string name="wifi_summary_on">WI-FI networks available</string>
+    <string name="list_title_preference">List preference</string>
+    <string name="list_summary_preference">An example that uses a list dialog</string>
+    <string name="dialog_title_list_preference">Choose one</string>
+
+</resources>

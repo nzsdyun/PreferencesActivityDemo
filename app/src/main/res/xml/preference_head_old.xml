@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:summary="one preference head"
+        android:title="preference Head 1">
+        <PreferenceCategory android:title="Wi-FI">
+            <CheckBoxPreference
+                android:key="wifi"
+                android:title="Wi-Fi" />
+
+            <EditTextPreference
+                android:dependency="wifi"
+                android:layout="?android:attr/preferenceLayoutChild"
+                android:title="Wi-Fi" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="two preference head"
+        android:title="preference Head 2">
+        <PreferenceCategory android:title="NetWork">
+            <CheckBoxPreference
+                android:key="network"
+                android:title="NetWork" />
+
+            <EditTextPreference
+                android:dependency="network"
+                android:layout="?android:attr/preferenceLayoutChild"
+                android:title="NetWork" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Launcher an Intent"
+        android:title="Intent">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.android.com" />
+    </PreferenceScreen>
+</PreferenceScreen>

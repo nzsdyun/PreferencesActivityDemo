@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+        android:fragment="com.example.chenkun.preferencesactivitydemo.PreferenceWithHeads$PrefHeadOne"
+        android:summary="one preference head"
+        android:title="preference Head 1" />
+    <header
+        android:fragment="com.example.chenkun.preferencesactivitydemo.PreferenceWithHeads$PrefHeadTwo"
+        android:summary="two preference head"
+        android:title="preference Head 2">
+        <extra
+            android:name="preference_head"
+            android:value="preference_head_two" />
+    </header>
+    <header
+        android:summary="Launcher an Intent"
+        android:title="Intent">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.android.com" />
+    </header>
+
+</preference-headers>

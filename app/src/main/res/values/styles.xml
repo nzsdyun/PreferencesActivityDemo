@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- copy from system -->
+    <style name="SwitchStyle">
+        <item name="android:track">@drawable/switch_track_holo_dark</item>
+        <item name="android:thumb">@drawable/switch_inner_holo_dark</item>
+        <item name="android:textOn">On</item>
+        <item name="android:textOff">Off</item>
+        <item name="android:thumbTextPadding">12dip</item>
+        <item name="android:switchMinWidth">96dip</item>
+        <item name="android:switchPadding">16dip</item>
+    </style>
+</resources>
